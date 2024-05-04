@@ -27,6 +27,12 @@
   <!-- Add your site or application content here -->
   <p>Hello world! This is HTML5 Boilerplate.</p>
   <script src="js/app.js"></script>
+      <script>
+        window.addEventListener('resize', function() {
+            var height = document.body.offsetHeight;
+            window.parent.postMessage({ height: height }, 'https://discountplr.com'); // Replace with your parent domain
+        });
+    </script>
 
 </body>
 
